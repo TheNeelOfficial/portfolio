@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+.loading_screen {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Share Tech Mono", monospace;
+}
+.loading_screen .logo_img {
+  width: 100px;
+}
+
+.decode-text {
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+}
+@media (min-width: 767px) {
+  .decode-text {
+    font-size: 2em;
+  }
+}
+
+.space {
+  display: inline-block;
+  width: 30px;
+}
+
+.text-animation {
+  display: inline-block;
+  color: transparent;
+  text-transform: uppercase;
+}
+.text-animation:before {
+  content: "";
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #0e182d;
+  width: 0;
+  height: 1.2em;
+  -webkit-transform: translate(-50%, -55%);
+  -ms-transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
+}
+.text-animation.state-1:before {
+  width: 1px;
+}
+.text-animation.state-2:before {
+  width: 0.9em;
+}
+.text-animation.state-3 {
+  color: black;
+}
+.text-animation.state-3:before {
+  width: 0;
+}
+
+.home_screen {
+  background: #000000;
+  display: none;
+  font-family: "Share Tech Mono", monospace;
+}
+.home_screen .primary_menu {
+  position: fixed;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  z-index: 10000;
+}
+.home_screen .primary_menu .logo {
+  font-size: 4em;
+  top: 0;
+  padding: 0 0.5em;
+  font-weight: bold;
+  float: left;
+}
+.home_screen .primary_menu ul {
+  list-style: none;
+  float: right;
+  margin: 1em;
+}
+.home_screen .primary_menu ul li {
+  display: inline-block;
+  padding: 1em;
+}
+.home_screen .home_screen_contents .main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+.home_screen .home_screen_contents .section {
+  float: left;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.home_screen .home_screen_contents .section:first-child {
+  background-color: lightblue;
+}
+.home_screen .home_screen_contents .section:nth-child(2) {
+  background-color: lightyellow;
+}
+.home_screen .home_screen_contents .section:nth-child(3) {
+  background-color: lightpink;
+  width: 50vw;
+}
+.home_screen .home_screen_contents .section:nth-child(4) {
+  background-color: lightgreen;
+}
+.home_screen .home_screen_contents .section:nth-child(5) {
+  background-color: lightgrey;
+}
+.home_screen .home_screen_contents .sections {
+  white-space: nowrap;
+  min-width: 100vw;
+  height: 100vh;
+}
+.home_screen .home_screen_contents .section__title, .home_screen .home_screen_contents .section__heading {
+  width: 100%;
+}
+.home_screen .home_screen_contents .section__heading p {
+  text-transform: uppercase;
+  font-size: 11px;
+  max-width: 160px;
+  margin: 0 auto;
+  display: inline-block;
+  white-space: normal;
+}
+
+body {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  background-color: #111;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body a {
+  outline: 0 !important;
+  text-decoration: none !important;
+}
+body * {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=master.css.map */

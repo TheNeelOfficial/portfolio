@@ -1,0 +1,123 @@
+.secondary_menu{
+  height: 100%;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  background-color: #111;
+  user-select: none;
+  * {
+    box-sizing: border-box;
+  }
+
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
+  .scroll {
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+
+  .scroll-content {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    height: 100vh;
+  }
+  .scroll-content--last {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .slide {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    padding: 20vh 0;
+  }
+  .slide--1 {
+    align-items: flex-start;
+  }
+  .slide--2 {
+    align-items: flex-end;
+  }
+  .slide--3 {
+    display: none;
+  }
+  .slide:last-child {
+    /* width: 65vw; */
+    padding-right: 15vw;
+  }
+  .slide__inner {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+  }
+
+  .slide__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 6em;
+    z-index: 2;
+    overflow: hidden;
+
+  .slide__img {
+    position: relative;
+    overflow: hidden;
+    padding-top: 65%;
+    width: 100%;
+  }
+  .slide__img figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .slide__img figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .scrollbar {
+    position: absolute;
+    bottom: 7.5%;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .scrollbar__handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    background-color: #fff;
+  }
+
+}
+
+}
