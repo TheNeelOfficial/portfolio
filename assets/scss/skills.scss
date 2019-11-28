@@ -1,0 +1,16 @@
+.skills_container {
+  text-align: center;
+  .chart {
+    position: relative;
+    display: inline-block;
+    margin: 20px 10px;
+    color: #555555;
+    font-size: 2em;
+    text-align: center;
+  }
+  .chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

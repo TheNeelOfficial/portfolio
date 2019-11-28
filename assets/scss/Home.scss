@@ -45,24 +45,95 @@
 
       &:first-child {
         background-color: lightblue;
+        width: 0;
+        @include device('tablet'){
+          width: 20vw;
+        };
       }
 
       &:nth-child(2) {
-        background-color: lightyellow;
+        background-color: lightgreen;
+        width: 100vw;
+        text-align: center;
+        .section_contents{
+          width: 100%;
+          img{
+            width: 20%;
+          }
+          p{
+            font-size: 2em;
+          }
+        }
+        @include device('tablet'){
+          width: 80vw;
+        };
       }
 
       &:nth-child(3) {
-        background-color: lightpink;
-        width: 50vw;
+        background-color: #FFF4B5;
+        width: 0;
+        @include device('tablet'){
+          width: 20vw;
+        };
       }
 
       &:nth-child(4) {
-        background-color: lightgreen;
+        background-color: lightpink;
+        width: 100vw;
+        @include device('tablet'){
+          width: 80vw;
+        };
       }
 
       &:nth-child(5) {
-        background-color: lightgrey;
+        background-color: #CFCFFF;
+        width: 0;
+        @include device('tablet'){
+          width: 20vw;
+        };
       }
+
+      &:nth-child(6) {
+        background-color: #C2E1FF;
+        width: 100vw;
+        @include device('tablet'){
+          width: 80vw;
+        };
+      }
+
+      &:nth-child(7) {
+        background-color: #6DE8E6;
+        width: 0;
+        @include device('tablet'){
+          width: 20vw;
+        };
+      }
+
+      &:nth-child(8) {
+        background-color: #78FFD7;
+        width: 100vw;
+        @include device('tablet'){
+          width: 80vw;
+        };
+      }
+
+
+      &:nth-child(9) {
+        background-color: #fff;
+        width: 0;
+        @include device('tablet'){
+          width: 20vw;
+        };
+      }
+
+      &:nth-child(10) {
+        background-color: #000000;
+        width: 100vw;
+        @include device('tablet'){
+          width: 80vw;
+        };
+      }
+
 
       &s {
         white-space: nowrap;
@@ -70,14 +141,20 @@
         height: 100vh;
       }
 
-      &__title, &__heading {
-        width: 100%
+      &__title {
+        width: 100%;
       }
 
       &__heading {
+        width: 100%;
+        h1{
+          font-size: 3em;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
         p {
           text-transform: uppercase;
-          font-size: 11px;
+          font-size: 2em;
           max-width: 160px;
           margin: 0 auto;
           display: inline-block;
