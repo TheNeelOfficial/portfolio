@@ -4,6 +4,7 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 1000000;
+  display: none;
   .ul--reset {
     list-style-type: none;
     margin: 0;
@@ -56,4 +57,7 @@
   .link--inverse-menu:hover, .link--inverse-menu:active {
     color: #555555;
   }
+  @include device('tablet'){
+    display: block;
+  };
 }
